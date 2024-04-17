@@ -9,3 +9,15 @@
   outline: none;
   font-family: 'poppins', sans serif;
 }
+
+:root {
+  background-color: black;
+  second-background-color: #161616;
+  text-color: #fff;
+  main-color: #7b4bb7;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
