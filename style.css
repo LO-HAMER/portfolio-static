@@ -86,3 +86,25 @@ html::-webkit-scrollbar-thumb {
   color: var(--main-color);
   display: none;
 }
+@media (max-width:995px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    border-left: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    border-top-left-radius: 2rem;
+    padding: 1rem 3%;
+    background-color: var(--second-background-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+}
+
+section {
+  min-height: 100vh;
+}
