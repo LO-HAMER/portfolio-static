@@ -21,11 +21,13 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
+
 body {
   background: var(--background-color);
   font-family: "Poppins", sans-serif;
   color: var(--text-color);
 }
+
 html ::-webkit-scrollbar {
   width: 0.5rem; /* Remplacez 0.5 par la largeur que vous souhaitez */
 }
@@ -33,6 +35,7 @@ html ::-webkit-scrollbar {
 html::-webkit-scrollbar-track {
   background: var(--background-color);
 }
+
 html::-webkit-scrollbar-thumb {
   background: var(--main-color);
 }
@@ -42,4 +45,43 @@ html::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   width: 100%;
+  padding: 3rem 9%;
+  background: rgba(0, 0, 0, 0.7);
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem;
+  color: var(--main-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3 solid transparent;
+}
+.navbar a:hover,
+.navbar a.activ {
+  columns: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+#menu-icon {
+  font size: 3.6rem;
+  color: var(--main-color);
+  display: none;
 }
