@@ -132,6 +132,32 @@ section {
   background: var(--background-color);
 }
 
-.home .home-content {
+.home .home-content h1 {
   font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+span {
+  color: var(--main-color);
+}
+
+.home-img {
+  border-radius: 50%;
+}
+
+.home-img img {
+  position: relative;
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  cursor: pointer;
+}
+.home-img img:hover{
+  transform: scale(1.01);
+  filter: drop-shadow(0 0 25px var(--main-color));
+}
+
+.home-content p {
+  font-size: 1.8 rem;
+  font-weight:500;
 }
