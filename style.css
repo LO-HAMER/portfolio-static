@@ -103,8 +103,35 @@ html::-webkit-scrollbar-thumb {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     display: none;
   }
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  .navbar a:hover,
+  .navbar.active {
+    padding: 1rem;
+    border-radius: 0.5 rem;
+    border-bottom: 0.5rem solid var(--main-color);
+  }
 }
 
 section {
   min-height: 100vh;
+  padding: 5rem 9% 5rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background: var(--background-color);
+}
+
+.home .home-content {
+  font-size: 6rem;
 }
