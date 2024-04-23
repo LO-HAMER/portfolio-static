@@ -289,6 +289,10 @@ span {
 .services {
   background: var(--second-background-color);
 }
+.heading {
+
+}
+
 .services-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -306,6 +310,7 @@ span {
   background: transparent;
   color: var(--text-color);
   transform: scale(1.03);
+  border: 1px solid var(--main-color);
 }
 .service-box .service-info {
   display: flex;
@@ -328,4 +333,21 @@ span {
   font-weight: 400;
   max-height: 100px;
   margin: auto;
+}
+
+@media (max-width:991px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  .services{
+    padding-bottom: 7rem;
+  }
+}
+@media (max-width:895px) {
+  .services h2 {
+    margin-bottom: 3rem;
+  }
+  .services-container {
+    grid-template-columns: repeat(1,1fr);
+  }
 }
