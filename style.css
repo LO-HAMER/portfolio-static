@@ -289,9 +289,7 @@ span {
 .services {
   background: var(--second-background-color);
 }
-.heading {
 
-}
 
 .services-container {
   display: grid;
@@ -375,6 +373,40 @@ span {
   padding: 10px;
   border-radius: 1rem;
   background: var(--background-color);
-  box-shadow: 0.4px 10px var(--main-color);
   transition: 0.3s ease;
- }
+  cursor: pointer;
+}
+.skills .container .bar:hover {
+  box-shadow: 0.4px 10px var(--main-color);
+  transform: scale(1.03);
+}
+.skills .container .bar .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.skills .container .bar .info  span {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  font-family: 'Poppins';
+}
+@media screen and (max-width:600px) {
+  .skills .container {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.skills .container .row {
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1rem;
+  padding: 2rem 0.2rem 2rem 0.2rem;
+  gap: 1rem;
+}
+.skills.container {
+  margin-top: 5px;
+  width: 100%;
+}
