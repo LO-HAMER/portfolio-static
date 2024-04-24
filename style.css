@@ -410,3 +410,15 @@ span {
   margin-top: 5px;
   width: 100%;
 }
+
+.education {
+  background: var(--second-background-color);
+}
+.education .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.education .timeline::after {
+  
+}
