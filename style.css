@@ -644,4 +644,13 @@ color: black;
   .header{
     padding: 2rem 3%;
   }
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  .services {
+    padding-bottom: 7rem;
+  }
+  .footer {
+    padding: 2rem 3%;
+  }
 }
