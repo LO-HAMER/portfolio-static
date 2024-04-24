@@ -540,3 +540,23 @@ color: black;
     left: 0%;
   }
 }
+
+.contact h2 {
+  margin-bottom: 3rem;
+  color: white;
+}
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.contact form .input {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact form .input-box .input,
+.contact form textarea {
+  width: 100%;
+}
